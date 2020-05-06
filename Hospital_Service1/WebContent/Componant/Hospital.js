@@ -120,9 +120,9 @@ function validateHospitalForm() {
 	}
 	
 	var letterReg3 = /^[A-Za-z]+$/;
-	var tmpfName3 =  $("#hosName").val().trim();
-	if(!tmpfName3.match(letterReg3)){
-		return "hosName must have alphabetic charaters only...!";
+	var tmpfHosName =  $("#hosName").val().trim();
+	if(!tmpfHosName.match(letterReg3)){
+		return "Hospital Name must have alphabetic charaters only...!";
 	}
 	// Telephone Number-----------------
 	if ($("#hosTelephone").val().trim() == "") {
