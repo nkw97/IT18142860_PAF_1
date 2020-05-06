@@ -14,7 +14,7 @@
 	<meta charset="ISO-8859-1">
 
 	<meta charset="ISO-8859-1">
-	<title>ADD HOSPITAL</title>
+	<title> HOSPITAL</title>
 </head>
 <body>
 	<div class="container">
