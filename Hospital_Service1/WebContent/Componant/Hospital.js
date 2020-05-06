@@ -118,14 +118,45 @@ function validateHospitalForm() {
 	if ($("#hosName").val().trim() == "") {
 		return "Insert Hospital name.";
 	}
+	
+	var letterReg3 = /^[A-Za-z]+$/;
+	var tmpfName3 =  $("#hosName").val().trim();
+	if(!tmpfName3.match(letterReg3)){
+		return "hosName must have alphabetic charaters only...!";
+	}
 	// Telephone Number-----------------
 	if ($("#hosTelephone").val().trim() == "") {
 		return "Insert Hospital Telephone.";
 	}
+	//is Numeric value
+	var tmhostel =$("#hosTelephone").val().trim();
+	if(!$.isNumeric(tmhostel)){
+		
+		return "Insert a numerical value for telephone";
+	}
+	
+	//is ten digit Telephone numbers
+	var tenhosTel = $("#hosTelephone").val().trim();
+	if(tenhosTel.length !=10){
+		
+		return "Insert valid 10 Digit number"
+	}
+	
+	
 	// Email-------------------------------
 	if ($("#hosEmail").val().trim() == "") {
 		return "Insert Hospital Email.";
 	}
+	
+	//is Valid Email
+	var tmpEmil=$ ("#hosEmail").val().trim();
+	var rag=/^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	if(!rag.test(tmpEmil)){
+		return "Enter valid Email";
+		
+	}
+	
+	
 	// Address
 	if ($("#hosAddress").val().trim() == "") {
 		return "Insert Hospital Address.";
