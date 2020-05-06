@@ -55,7 +55,7 @@ public class HospitalAPI extends HttpServlet {
 				request.getParameter("hosTelephone"),
 				request.getParameter("hosEmail"), 
 				request.getParameter("hosAddress"));
-		System.out.println("Sevelt"+output);
+		
 
 		response.getWriter().write(output);
 

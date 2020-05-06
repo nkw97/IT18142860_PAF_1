@@ -24,17 +24,17 @@
 				<h1>ADD HOSPITAL</h1>
 				<form id="formHospital" name="formHospital" method="post" action="hospital.jsp">
 					Hospital Name: 
-					<input id="hospitalName" name="hospitalName" type="text"class="form-control form-control-sm">
+					<input id="hosName" name="hosName" type="text"class="form-control form-control-sm">
 								
 					 <br> 
 					 Telephone Number:
-					<input id="telNo" name="telNo" type="text"class="form-control form-control-sm"> 
+					<input id="hosTelephone" name="hosTelephone" type="text"class="form-control form-control-sm"> 
 					<br>
 					 Email: 
-					<input id="email" name="email" type="text"class="form-control form-control-sm"> 
+					<input id="hosEmail" name="hosEmail" type="text"class="form-control form-control-sm"> 
 					<br>
 					 Address: 
-					<input id="address" name="address" type="text"class="form-control form-control-sm">
+					<input id="hosAddress" name="hosAddress" type="text"class="form-control form-control-sm">
 					 <br> 
 					<input id="btnSave" name="btnSave" type="button" value="Save"class="btn btn-primary">
 		<input type="hidden" id="hidHospitalIDSave" name="hidHospitalIDSave" value="">

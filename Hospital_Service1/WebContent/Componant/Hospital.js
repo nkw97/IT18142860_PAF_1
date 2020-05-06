@@ -70,11 +70,11 @@ $(document).on(
 		function(event) {
 			$("#hidHospitalIDSave").val(
 					$(this).closest("tr").find('#hidHospitalIDUpdate').val());
-			$("#hospitalName").val(
+			$("#hosName").val(
 					$(this).closest("tr").find('td:eq(0)').text());
-			$("#telNo").val($(this).closest("tr").find('td:eq(1)').text());
-			$("#email").val($(this).closest("tr").find('td:eq(2)').text());
-			$("#address").val($(this).closest("tr").find('td:eq(3)').text());
+			$("#hosTelephone").val($(this).closest("tr").find('td:eq(1)').text());
+			$("#hosEmail").val($(this).closest("tr").find('td:eq(2)').text());
+			$("#hosAddress").val($(this).closest("tr").find('td:eq(3)').text());
 
 		});
 
@@ -115,19 +115,19 @@ function onHospitalDeleteComplete(response, status) {
 
 function validateHospitalForm() {
 	// Hospital Name-------------------
-	if ($("#hospitalName").val().trim() == "") {
+	if ($("#hosName").val().trim() == "") {
 		return "Insert Hospital name.";
 	}
 	// Telephone Number-----------------
-	if ($("#telNo").val().trim() == "") {
+	if ($("#hosTelephone").val().trim() == "") {
 		return "Insert Hospital Telephone.";
 	}
 	// Email-------------------------------
-	if ($("#email").val().trim() == "") {
+	if ($("#hosEmail").val().trim() == "") {
 		return "Insert Hospital Email.";
 	}
 	// Address
-	if ($("#address").val().trim() == "") {
+	if ($("#hosAddress").val().trim() == "") {
 		return "Insert Hospital Address.";
 	}
 

@@ -33,7 +33,7 @@ public class Hospital {
 	public String insertHospital(String hosName, String hosTelephone, String hosEmail, String hosAddress) {
 
 		String output = "";
-		output = "Database Insert";
+		//output = "Database Insert";
 
 		try {
 
@@ -48,10 +48,10 @@ public class Hospital {
 			}
 			// create a prepared statement
 			String query = " insert into `hospitals`(`hosName`,`hosTelephone`,`hosEmail`,`hosAddress`)"
-					+ " values (?, ?, ?, ?)";
-			System.out.println("quary read");
+			                + " values (?, ?, ?, ?)";
+			//System.out.println(query);
 			PreparedStatement preparedStmt = con.prepareStatement(query);
-			System.out.println(preparedStmt);
+			
 
 			preparedStmt.setString(1, hosName);
 			preparedStmt.setString(2, hosTelephone);
